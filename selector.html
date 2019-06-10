@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+</head>
+<style>
+    [class$=first]{
+        background: red;
+    }
+</style>
+<body>
+<h1 id="title">Jquery</h1>
+<ul class="first">
+    <span>span1</span>
+</ul>
+
+<ul class="first1">
+    <span>first1</span>
+    <li>基本</li>
+    <li>层级</li>
+</ul>
+<ul class="first2">
+    <li>属性选择器</li>
+    <li>具有某一个属性</li>
+</ul>
+
+<script>
+    $(function () {
+        // $('#title').css({color:'red'});
+        // $('#title + ul').css({background:'red'});
+
+        // console.log($('[class!=first]'));
+        console.log($('span:only-of-type'));
+    });
+    
+</script>
+</body>
+</html>
