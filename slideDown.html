@@ -66,10 +66,23 @@
         //     slideDowns.eq(index).slideUp();
         // });
 
-        slideBtn.on('mouseenter mouseleave',function () {
-            let index = $(this).index('li:has(.slideDown)');
-            slideDowns.eq(index).slideToggle();
+        // slideBtn.on('mouseenter mouseleave',function () {
+        //     let index = $(this).index('li:has(.slideDown)');
+        //     slideDowns.eq(index).slideToggle();
+        // });
+
+        // slideBtn.on('mouseenter' , function () {
+        //     $(this).children('.slideDown').slideDown();
+        // });
+        // slideBtn.on('mouseleave', function () {
+        //     $(this).children('.slideDown').slideUp();
+        // });
+        //
+        slideBtn.hover(function () {
+            $(this).children('.slideDown').slideToggle();
         });
+
+
     });
 </script>
 </body>
